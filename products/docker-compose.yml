@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  candyshop-db:
+    image: mongo
+    restart: always
+    container_name: candyshop-db
+    volumes:
+    - ./scripts:/scripts
+    ports:
+      - 27017:27017
